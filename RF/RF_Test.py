@@ -188,7 +188,7 @@ def RF_Prediction(test_cases):
 # 测试示例
 if __name__ == "__main__":
     # 批量预测测试
-    test_cases1 = pd.read_csv('data.csv')
+    test_cases1 = pd.read_csv('./T_Data/test_data.csv')
     batch_result = RF_Test(test_cases1)
     
     if batch_result is not None and 'true_labels' in batch_result:

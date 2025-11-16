@@ -93,11 +93,11 @@ def Test_CSV_All(data):
 
 if __name__ == "__main__":
     # 单样本预测测试
-    '''test_cases2 = [
+    test_cases2 = [
         (0.8, 0.7, 0.9),
         (-0.5, -0.5, -0.6),
         (0.1, 0.2, -0.1)
-    ]'''
+    ]
 
     data = './T_Data/test_data.csv'
     accuracy, time_used, precision_rate, recall, F1, n_samples = Test_CSV_All(data)
@@ -116,4 +116,4 @@ if __name__ == "__main__":
     vis.Vis_Data(data=plt_data, groups=model_groups, bar_labels=model_labels, 
              title='Custom Model Comparison - Metrics')
 
-    # Test_All(test_cases2)
+    Test_All(test_cases2)
