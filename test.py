@@ -110,7 +110,7 @@ if __name__ == "__main__":
         time_used
     ]
 
-    model_groups = ['Accuracy', 'Precision', 'Recall', 'F1', 'Time Used']
+    model_groups = ['Accuracy', 'Precision', 'Recall', 'F1', 'Test Time Used']
     model_labels = ['GNB', 'RF', 'SVM']
 
     vis.Vis_Data(data=plt_data, groups=model_groups, bar_labels=model_labels, 
