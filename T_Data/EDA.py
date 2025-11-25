@@ -7,9 +7,6 @@ def load_and_visualize(filename):
     # 读取数据
     df = pd.read_csv(filename)
     
-    print("数据前5行:")
-    print(df.head())
-    
     # 创建3D图形
     fig = plt.figure(figsize=(10, 8))
     ax = fig.add_subplot(111, projection='3d')
